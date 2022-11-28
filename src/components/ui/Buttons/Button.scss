@@ -1,0 +1,62 @@
+.buttons {
+  cursor: pointer;
+  padding: 0.6rem 1.6rem;
+  border-radius: 1.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    font-weight: 700;
+  }
+
+  &.primary {
+    background-color: var(--cyan);
+    color: white;
+
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
+
+  &.secondary {
+    background-color: transparent;
+    color: var(--grayish-violet);
+
+    &:hover {
+      color: var(--dark-violet);
+    }
+  }
+
+  &.primary_mobile {
+    background-color: var(--cyan);
+    color: white;
+    width: 100%;
+
+    &:hover {
+      filter: brightness(1.1);
+    }
+
+    @media screen and (min-width: 375px) {
+      & {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &.secondary_mobile {
+    background-color: transparent;
+    color: white;
+
+    @media screen and (min-width: 375px) {
+      & {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &.no-rounded {
+    border-radius: 0.4rem;
+  }
+}

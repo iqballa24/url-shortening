@@ -1,0 +1,115 @@
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+}
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  background-color: white;
+  padding: 1rem 1rem;
+
+  @media screen and (min-width: 768px) {
+    & {
+      padding: 1rem 2rem;
+    }
+  }
+  @media screen and (min-width: 976px) {
+    & {
+      padding: 1rem 8rem;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    & {
+      padding: 1rem 10rem;
+    }
+  }
+
+  &_direction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    h1.logo {
+      font-size: 26px;
+      color: var(--dark-violet);
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+
+      @media screen and (min-width: 375px) {
+        font-size: 30px;
+      }
+
+      @media screen and (min-width: 768px) {
+        & {
+          font-size: 42px;
+        }
+      }
+    }
+
+    ul {
+      display: none;
+      text-decoration: none;
+      padding: 0;
+      margin: 0;
+      padding-left: 3rem;
+      padding-right: 2rem;
+      transition: all 0.3s ease;
+
+      @media screen and (min-width: 375px) {
+      }
+
+      @media screen and (min-width: 768px) {
+        & {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+      li {
+        cursor: pointer;
+        text-decoration: none;
+        list-style: none;
+        font-size: .9rem;
+        font-weight: 500;
+        padding-right: 30px;
+        color: var(--grayish-violet);
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: var(--dark-violet);
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  &_hamburger {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      & {
+        display: none;
+      }
+    }
+  }
+
+  &_buttons {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+}

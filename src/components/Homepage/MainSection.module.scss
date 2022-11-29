@@ -30,8 +30,24 @@
     top: -3.2rem;
   }
 
+  & > &_result {
+    width: 94%;
+    margin-top: 6rem;
+
+    @media screen and (min-width: 768px) {
+      & {
+        margin-top: 4rem;
+      }
+    }
+    @media screen and (min-width: 976px) {
+      & {
+        margin-top: 0;
+      }
+    }
+  }
+
   & > &_title {
-    margin-top: 8rem;
+    margin-top: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,7 +56,7 @@
 
     @media screen and (min-width: 976px) {
       & {
-        margin-top: 4rem;
+        margin-top: 2rem;
         width: 60%;
       }
     }
@@ -109,7 +125,7 @@
       width: 0.7rem;
       height: 80%;
       background-color: var(--cyan);
-        
+
       @media screen and (min-width: 768px) {
         & {
           width: 80%;

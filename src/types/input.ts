@@ -1,5 +1,9 @@
 export interface InputProps {
-  type: any;
+  id: string;
+  type: string;
+  value: string;
+  hasError: boolean;
   placeholder: string;
-  changeHandler: (e: string) => void;
+  messageError: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }

@@ -1,8 +1,32 @@
-input[type="text"] {
+.container_input {
+  position: relative;
   width: 100%;
-  outline: none;
-  border-radius: 0.4rem;
-  font-size: .8rem;
-  padding: 0.6rem 0.8rem;
-  color: var(--dark-violet);
+
+  input[type="text"] {
+    width: 100%;
+    outline: none;
+    border-radius: 0.4rem;
+    font-size: 0.8rem;
+    padding: 0.6rem 0.8rem;
+    color: var(--dark-violet);
+  }
+
+  .input_error {
+    border: 3px solid var(--red);
+    outline: var(--red);
+    width: 100%;
+    border-radius: 0.4rem;
+    font-size: 0.8rem;
+    padding: 0.6rem 0.8rem;
+    color: var(--dark-violet);
+  }
+
+  .msg_error {
+    color: var(--red);
+    position: absolute;
+
+    em {
+      font-size: 0.8rem;
+    }
+  }
 }

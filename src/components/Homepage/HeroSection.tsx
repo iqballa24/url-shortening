@@ -1,7 +1,7 @@
 import { Buttons } from "../ui";
 import classes from "./HeroSection.module.scss";
 
-const HeroSection = () => {
+const HeroSection: React.FC<{ onClick: () => void }> = ({ onClick }) => {
   return (
     <section className={classes.section}>
       <div className={classes.section_hero_title}>
@@ -10,7 +10,7 @@ const HeroSection = () => {
           Build your brand's recognition and get detailed insights on how your
           links are performing.
         </p>
-        <Buttons type="button" isPrimary>
+        <Buttons type="button" isPrimary onClick={onClick}>
           Get Started
         </Buttons>
       </div>

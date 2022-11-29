@@ -11,6 +11,8 @@ const Buttons: React.FC<ButtonsProps> = ({
   isPrimaryOnMobile,
   isSecondaryOnMobile,
   noRounded,
+  full,
+  onClick
 }) => {
   const className = ["buttons"];
 
@@ -19,9 +21,10 @@ const Buttons: React.FC<ButtonsProps> = ({
   isPrimaryOnMobile && className.push("primary_mobile");
   isSecondaryOnMobile && className.push("secondary_mobile");
   noRounded && className.push("no-rounded");
+  full && className.push("full");
 
   return (
-    <button type={type} className={className.join(" ")}>
+    <button type={type} className={className.join(" ")} onClick={onClick??onClick}>
       {children}
     </button>
   );

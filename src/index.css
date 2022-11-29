@@ -8,10 +8,10 @@
   --grayish-violet: hsl(257, 7%, 63%);
   --very-dark-blue: hsl(255, 11%, 22%);
   --very-dark-violet: hsl(260, 8%, 14%);
-  --bg-shorten-mobile: url("./src/assets/images/bg-shorten-mobile.svg");
-  --bg-shorten-desktop: url("./src/assets/images/bg-shorten-desktop.svg");
-  --bg-boost-mobile: url("./src/assets/images/bg-boost-mobile.svg");
-  --bg-boost-desktop: url("./src/assets/images/bg-boost-desktop.svg");
+  --bg-shorten-mobile: url("/public/bg-shorten-mobile.svg");
+  --bg-shorten-desktop: url("/public/bg-shorten-desktop.svg");
+  --bg-boost-mobile: url("/public/bg-boost-mobile.svg");
+  --bg-boost-desktop: url("/public/bg-boost-desktop.svg");
 }
 
 * {

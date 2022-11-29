@@ -15,7 +15,7 @@ const HeroSection: React.FC<{ onClick: () => void }> = ({ onClick }) => {
         </Buttons>
       </div>
       <div className={classes.section_hero_image}>
-        <img src="./src/assets/images/illustration-working.svg" alt="logo" />
+        <img src="/public/illustration-working.svg" alt="logo" />
       </div>
     </section>
   );
